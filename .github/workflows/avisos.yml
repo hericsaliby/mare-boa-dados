@@ -1,9 +1,8 @@
 name: Avisos no celular
 on:
-  # horários ligados quando o robô antigo for desligado (para não mandar aviso em dobro)
-  # schedule:
-  #   - cron: "40 14 * * *"   # 11h40 em Brasília: frente fria
-  #   - cron: "40 20 * * *"   # 17h40 em Brasília: frente fria e véspera da agenda
+  schedule:
+    - cron: "40 14 * * *"   # 11h40 em Brasília: frente fria
+    - cron: "40 20 * * *"   # 17h40 em Brasília: frente fria e véspera da agenda
   workflow_dispatch:
 permissions:
   contents: read
