@@ -34,7 +34,7 @@ FS = f"https://firestore.googleapis.com/v1/projects/{PROJ}/databases/(default)/d
 NOW = dt.datetime.now(dt.timezone.utc)
 BRT = dt.timezone(dt.timedelta(hours=-3))
 MIRROR = "https://hericsaliby.github.io/mare-boa-dados/"
-APP = "https://hericsaliby.github.io/mare-boa/"
+APP = "https://mareboa.net.br/"
 DIAS = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
 REG_N = {"sc": "SC", "pr": "no PR", "sp": "em SP"}
 
