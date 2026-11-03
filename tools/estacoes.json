@@ -1,0 +1,27 @@
+{
+ "epagri": [
+  {"k": "itapoa", "n": "Itapoá", "id": "1_2903", "csv": "Itapoa", "lat": -26.117, "lon": -48.612},
+  {"k": "sfs", "n": "São Francisco do Sul", "id": "2_2909", "csv": "Sao_Francisco_do_Sul", "lat": -26.243, "lon": -48.637},
+  {"k": "ilhapaz", "n": "Ilha da Paz", "id": "8_2901", "csv": "Ilha_da_Paz", "lat": -26.178, "lon": -48.498},
+  {"k": "joinville", "n": "Joinville", "id": "11_2913", "csv": "Joinville", "lat": -26.300, "lon": -48.830},
+  {"k": "barradosul", "n": "Barra do Sul", "id": null, "csv": "Barra_do_Sul", "lat": -26.455, "lon": -48.612},
+  {"k": "barravelha", "n": "Barra Velha", "id": "10_2915", "csv": "Barra_Velha", "lat": -26.632, "lon": -48.683},
+  {"k": "itajai", "n": "Itajaí", "id": "12_2921", "csv": "Itajai", "lat": -26.905, "lon": -48.660},
+  {"k": "bc", "n": "Balneário Camboriú", "id": "5_2927", "csv": "Balneario_Camboriu", "lat": -26.995, "lon": -48.630},
+  {"k": "floripa", "n": "Florianópolis", "id": "3_2951", "csv": "Florianopolis", "lat": -27.597, "lon": -48.565},
+  {"k": "imbituba", "n": "Imbituba", "id": "6_2963", "csv": "Imbituba", "lat": -28.231, "lon": -48.651},
+  {"k": "laguna", "n": "Laguna", "id": "4_2967", "csv": "Laguna_Porto", "lat": -28.485, "lon": -48.780},
+  {"k": "rincao", "n": "Balneário Rincão", "id": "7_2975", "csv": "Balneario_Rincao", "lat": -28.835, "lon": -49.235},
+  {"k": "torres", "n": "Passo de Torres", "id": "9_2981", "csv": "Passo_de_Torres", "lat": -29.322, "lon": -49.720}
+ ],
+ "ioc": [
+  {"k": "paranagua", "n": "Paranaguá", "code": "parg", "lat": -25.502, "lon": -48.526},
+  {"k": "pontal", "n": "Pontal do Sul", "code": "pont", "lat": -25.552, "lon": -48.366},
+  {"k": "antonina", "n": "Antonina", "code": "anti", "lat": -25.456, "lon": -48.676},
+  {"k": "ilhabela", "n": "Ilhabela", "code": "ilha", "lat": -23.774, "lon": -45.355}
+ ],
+ "uhslc": [
+  {"k": "cananeia", "n": "Cananéia", "id": 281, "lat": -25.017, "lon": -47.925},
+  {"k": "ubatuba", "n": "Ubatuba", "id": 282, "lat": -23.500, "lon": -45.117}
+ ]
+}

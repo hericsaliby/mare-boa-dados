@@ -1,0 +1,45 @@
+name: Aprender com a comunidade (semanal)
+on:
+  schedule:
+    - cron: "17 9 * * 1"   # segunda, 6h17 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/aprende.yml", "tools/aprende.py", "tools/conta.py"]
+permissions:
+  contents: read
+concurrency: aprende
+jobs:
+  aprende:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write   # só para atualizar o branch "dados"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q google-auth requests
+      - name: Calcula o placar de acerto e ajusta os pesos da nota
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+          REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: |
+          mkdir novo
+          set -o pipefail
+          python3 tools/aprende.py novo 2>&1 | tee log.txt || { tail -15 log.txt | while IFS= read -r l; do echo "::error::$l"; done; exit 1; }
+          ls novo/*.json >/dev/null 2>&1 || { echo "nada gerado"; exit 0; }
+          for k in 1 2 3 4 5; do
+            rm -rf dados && git clone -q --depth 1 -b dados "$REPO" dados
+            cp novo/*.json dados/
+            cd dados
+            git add -A
+            git -c user.name=mare-boa-bot -c user.email=mare-boa-bot@users.noreply.github.com commit -qm "Aprendizado semanal $(date -u +%F)" || { echo "nada mudou"; exit 0; }
+            if git push -q origin dados 2>&1 | tee ../push.txt; then exit 0; fi
+            tail -5 ../push.txt | while IFS= read -r l; do echo "::warning::$l"; done
+            cd .. && sleep $((k*7))
+          done
+          exit 1

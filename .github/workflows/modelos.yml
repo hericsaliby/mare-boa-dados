@@ -1,0 +1,45 @@
+name: Modelos (GFS, ECMWF, ondas, água)
+on:
+  schedule:
+    - cron: "25 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/modelos.yml", "tools/modelos.py", "tools/relevo.py"]
+permissions:
+  contents: read
+concurrency: modelos
+jobs:
+  modelos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions:
+      contents: write   # só para atualizar o branch "dados"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pygrib numpy rasterio pillow
+      - name: Baixa os modelos e grava no branch "dados"
+        env:
+          REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: |
+          git clone -q --depth 1 -b dados "$REPO" dados
+          mkdir novo
+          for f in modelos.json mar.json modelos_log.txt relevo.json agua.png modelos_base.json.gz modelos_sc.json modelos_pr.json modelos_sp.json mar_sc.json mar_pr.json mar_sp.json relevo_sc.json relevo_pr.json relevo_sp.json agua_sc.png agua_pr.png agua_sp.png; do cp "dados/$f" novo/ 2>/dev/null || true; done
+          python3 tools/relevo.py novo || true
+          python3 tools/modelos.py novo
+          # grava por cima do branch atual; se o robô da EPAGRI gravou no meio, pega de novo e repete
+          for k in 1 2 3 4 5; do
+            rm -rf dados && git clone -q --depth 1 -b dados "$REPO" dados
+            for f in modelos.json mar.json modelos_log.txt relevo.json agua.png modelos_base.json.gz modelos_sc.json modelos_pr.json modelos_sp.json mar_sc.json mar_pr.json mar_sp.json relevo_sc.json relevo_pr.json relevo_sp.json agua_sc.png agua_pr.png agua_sp.png; do cp "novo/$f" dados/ 2>/dev/null || true; done
+            cd dados
+            git add -A
+            git -c user.name=mare-boa-bot -c user.email=mare-boa-bot@users.noreply.github.com commit -qm "Modelos $(date -u +%FT%TZ)" || { echo "nada mudou"; exit 0; }
+            if git push -q origin dados; then exit 0; fi
+            cd ..; sleep 20
+          done
+          exit 1

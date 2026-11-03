@@ -1,0 +1,39 @@
+name: Rios do litoral (mensal)
+on:
+  schedule:
+    - cron: "23 7 3 * *"   # dia 3 de cada mês
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/rios.yml", "tools/rios.py"]
+permissions:
+  contents: read
+concurrency: rios
+jobs:
+  rios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write   # só para atualizar o branch "dados"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Baixa os rios do OpenStreetMap e calcula a distância até a foz
+        env:
+          REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: |
+          mkdir novo
+          set -o pipefail
+          python3 tools/rios.py novo 2>&1 | tee log.txt || { tail -10 log.txt | while IFS= read -r l; do echo "::error::$l"; done; exit 1; }
+          tail -3 log.txt | while IFS= read -r l; do echo "::notice::$l"; done
+          for k in 1 2 3 4 5; do
+            rm -rf dados && git clone -q --depth 1 -b dados "$REPO" dados
+            cp novo/rios_sc.json dados/
+            cd dados
+            git add -A
+            git -c user.name=mare-boa-bot -c user.email=mare-boa-bot@users.noreply.github.com commit -qm "Rios $(date -u +%F)" || { echo "nada mudou"; exit 0; }
+            if git push -q origin dados; then exit 0; fi
+            cd .. && sleep $((k*7))
+          done
+          exit 1
