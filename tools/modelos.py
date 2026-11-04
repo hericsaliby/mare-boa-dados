@@ -192,6 +192,65 @@ def gfs_fields(c, f, acc):
     return fl
 
 
+# ---------------- vento amplo (só para o mapa, estilo Windy) ----------------
+# Grade larga e mais grossa (0,5°, de 3 em 3 h): do RS ao RJ e ~500 km mar adentro. Só vento a 10 m (GFS).
+GW = {"la0": -34.0, "lo0": -57.0, "st": 0.5, "nla": 27, "nlo": 35}
+_IDXW = {}
+
+
+def cropw(g):
+    key = (g.Ni, g.Nj, g.latitudeOfFirstGridPointInDegrees, g.longitudeOfFirstGridPointInDegrees)
+    if key not in _IDXW:
+        lats, lons = g.latlons()
+        la1, lo1 = lats[:, 0], ((lons[0, :] + 180) % 360) - 180
+        _IDXW[key] = [(int(np.argmin(np.abs(la1 - (GW["la0"] + i * GW["st"])))), int(np.argmin(np.abs(lo1 - (GW["lo0"] + j * GW["st"])))))
+                      for i in range(GW["nla"]) for j in range(GW["nlo"])]
+    vals = g.values
+    return [None if not np.isfinite(vals[i, j]) else float(vals[i, j]) for i, j in _IDXW[key]]
+
+
+def vento_amplo(run, old):
+    if not run:
+        return old
+    if old and old.get("run") == run and old.get("grid") == GW:
+        return old
+    c = dt.datetime.strptime(run, "%Y%m%d%H").replace(tzinfo=dt.timezone.utc)
+    box = dict(toplat=GW["la0"] + (GW["nla"] - 1) * GW["st"], bottomlat=GW["la0"], leftlon=360 + GW["lo0"],
+               rightlon=360 + GW["lo0"] + (GW["nlo"] - 1) * GW["st"])
+    tt, U, V = [], [], []
+    for f in range(0, 169, 3):
+        q = {"dir": f"/gfs.{c:%Y%m%d}/{c:%H}/atmos", "file": f"gfs.t{c:%H}z.pgrb2.0p25.f{f:03d}", "subregion": "",
+             "var_UGRD": "on", "var_VGRD": "on", "lev_10_m_above_ground": "on"}
+        q.update({k: str(v) for k, v in box.items()})
+        try:
+            u = v = None
+            for g in messages(get("https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?" + urllib.parse.urlencode(q))):
+                k = gfs_kind(g)
+                if k == "u":
+                    u = cropw(g)
+                elif k == "v":
+                    v = cropw(g)
+            if u and v:
+                tt.append(ts(c + dt.timedelta(hours=f)))
+                U.append([None if x is None else int(round(x * 36)) for x in u])  # km/h × 10
+                V.append([None if x is None else int(round(x * 36)) for x in v])
+        except Exception as e:
+            log("Vento amplo f%03d" % f, "erro", e)
+        time.sleep(0.7)
+    if len(tt) < 20:
+        log("Vento amplo: poucos horários", len(tt))
+        return old
+    # guarda as últimas 24 h da rodada anterior (o mapa também mostra o passado recente)
+    if old and old.get("grid") == GW:
+        for i, t in enumerate(old["t"]):
+            if t < tt[0] and t >= tt[0] - 86400:
+                tt.insert(0, t), U.insert(0, old["u"][i]), V.insert(0, old["v"][i])
+        o = sorted(range(len(tt)), key=lambda i: tt[i])
+        tt, U, V = [tt[i] for i in o], [U[i] for i in o], [V[i] for i in o]
+    log("Vento amplo:", len(tt), "horários,", GW["nla"] * GW["nlo"], "pontos")
+    return {"run": run, "grid": GW, "t": tt, "u": U, "v": V}
+
+
 def gfs_run(old):
     cyc = next((c for c in cycle_list((0, 6, 12, 18), 6)
                 if exists(f"https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.{c:%Y%m%d}/{c:%H}/atmos/gfs.t{c:%H}z.pgrb2.0p25.f168")), None)
@@ -540,6 +599,13 @@ def main():
             res.pop(k)
     with gzip.open(os.path.join(D, "modelos_base.json.gz"), "wt") as f:
         json.dump(res, f, separators=(",", ":"))
+    try:
+        va = vento_amplo((res.get("gfs") or {}).get("run"), load("vento_amplo.json"))
+        if va:
+            with open(os.path.join(D, "vento_amplo.json"), "w") as f:
+                json.dump(va, f, separators=(",", ":"))
+    except Exception as e:
+        log("Vento amplo falhou:", e)
     for nome, r in REGIOES.items():
         out = {"gerado": res["gerado"], "regiao": nome}
         for k in ("gfs", "ecmwf", "ondas"):

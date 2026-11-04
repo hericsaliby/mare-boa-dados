@@ -29,7 +29,7 @@ jobs:
           pip install -q utide numpy >/dev/null 2>&1 || true
           python3 tools/mares.py old out || true
           # arquivos do robô de modelos (outro workflow) seguem como estão
-          for f in modelos.json mar.json modelos_log.txt relevo.json agua.png modelos_base.json.gz modelos_sc.json modelos_pr.json modelos_sp.json mar_sc.json mar_pr.json mar_sp.json relevo_sc.json relevo_pr.json relevo_sp.json agua_sc.png agua_pr.png agua_sp.png pesos.json placar.json aprende.json rios_sc.json; do cp "old/$f" out/ 2>/dev/null || true; done
+          for f in modelos.json mar.json modelos_log.txt relevo.json agua.png modelos_base.json.gz modelos_sc.json modelos_pr.json modelos_sp.json mar_sc.json mar_pr.json mar_sp.json relevo_sc.json relevo_pr.json relevo_sp.json agua_sc.png agua_pr.png agua_sp.png vento_amplo.json pesos.json placar.json aprende.json rios_sc.json; do cp "old/$f" out/ 2>/dev/null || true; done
           BASE=$(git -C old rev-parse HEAD 2>/dev/null || echo "")
           date -u +%FT%TZ > out/atualizado.txt
           touch out/.nojekyll   # GitHub Pages publica os arquivos como estão
