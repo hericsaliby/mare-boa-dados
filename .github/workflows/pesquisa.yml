@@ -11,22 +11,29 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Fontes de maré de SP (FEMAR, IOC, IO-USP, Marinha)
+      - name: Coordenadas de pontos de pesca de SP (OpenStreetMap/Nominatim)
         env:
           REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         run: |
           mkdir out && cd out
-          g(){ curl -sSL -m 90 -A "Mozilla/5.0 (mare-boa pesquisa)" -o "$1" "$2" || echo "falhou $2"; echo "$1 $(wc -c <"$1" 2>/dev/null)"; }
-          g femar_indice.html "http://www.fundacaofemar.org.br/biblioteca/emb/indice.html"
-          g femar_raiz.html "http://www.fundacaofemar.org.br/biblioteca/emb/"
-          g ioc_lista.html "https://www.ioc-sealevelmonitoring.org/list.php?showall=all&output=general&order=country"
-          g iousp_tabuas.html "https://www.io.usp.br/index.php/tabuas-de-mares"
-          g iousp_home.html "https://www.io.usp.br/"
-          g t2627_www.pdf "https://www.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf"
-          g t2627_www3.pdf "https://www3.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf"
-          g chm_tabuas.html "https://www.marinha.mil.br/chm/tabuas-de-mare"
-          # páginas das estações da FEMAR que citam SP
-          grep -oiE 'href="[^"]+"' femar_indice.html | sed 's/href="//I;s/"$//' | sort -u > femar_links.txt || true
-          n=0; while read -r l; do case "$l" in *[Ss][Pp]*|*santos*|*ubatuba*|*sebastiao*|*caragua*|*guaruja*|*bertioga*|*cananeia*|*vicente*|*iguape*|*itanhaem*|*peruibe*|*ilhabela*|*anchieta*) n=$((n+1)); [ $n -le 80 ] && g "femar_$(echo "$l" | tr '/:?&=' '_____' | tail -c 80)" "http://www.fundacaofemar.org.br/biblioteca/emb/$l";; esac; done < femar_links.txt
-          ls -la | head -120
-          git init -q -b pesquisa && git add -A && git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm "fontes SP" && git push -qf "$REPO" pesquisa
+          python3 - <<'PY'
+          import json,time,urllib.parse,urllib.request
+          Q=["Praia do Itaguá, Ubatuba","Rio Grande de Ubatuba foz, Ubatuba","Praia Vermelha do Norte, Ubatuba","Praia do Perequê-Açu, Ubatuba","Praia da Enseada, Ubatuba","Saco da Ribeira, Ubatuba","Picinguaba, Ubatuba","Praia da Lagoinha, Ubatuba",
+             "Praia Martim de Sá, Caraguatatuba","Morro do Camaroeiro, Caraguatatuba","Rio Juqueriquerê, Caraguatatuba","Porto Novo, Caraguatatuba","Praia da Tabatinga, Caraguatatuba","Praia do Indaiá, Caraguatatuba",
+             "Praia de Barequeçaba, São Sebastião","Praia do Arrastão, São Sebastião","Praia de Toque-Toque Grande, São Sebastião","Boiçucanga, São Sebastião","Praia de Maresias, São Sebastião",
+             "Ponta das Canas, Ilhabela","Praia do Perequê, Ilhabela","Ponta da Sela, Ilhabela",
+             "Forte São João, Bertioga","Rio Itapanhaú, Bertioga","Praia da Enseada, Bertioga",
+             "Praia do Tombo, Guarujá","Praia da Enseada, Guarujá","Praia de Pernambuco, Guarujá","Praia do Perequê, Guarujá","Ponta do Munduba, Guarujá","Praia do Guaiúba, Guarujá","Fortaleza da Barra Grande, Guarujá",
+             "Ponta da Praia, Santos","Emissário Submarino, Santos","Ilha Porchat, São Vicente","Ponte Pênsil, São Vicente","Plataforma de Pesca, Mongaguá","Praia do Forte, Praia Grande","Canto do Forte, Praia Grande",
+             "Rio Itanhaém, Itanhaém","Praia do Guaraú, Peruíbe","Barra do Una, Peruíbe","Iguape","Barra do Ribeira, Iguape","Mar Pequeno, Iguape","Parque Estadual Marinho da Laje de Santos","Estação Ecológica Tupinambás","Parque Estadual Ilha Anchieta"]
+          out={}
+          for q in Q:
+            u="https://nominatim.openstreetmap.org/search?"+urllib.parse.urlencode({"q":q+", São Paulo, Brasil","format":"jsonv2","limit":3})
+            try:
+              r=json.load(urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"mare-boa-pesquisa (github.com/hericsaliby/mare-boa-dados)"}),timeout=30))
+              out[q]=[{"lat":x["lat"],"lon":x["lon"],"tipo":x.get("type"),"nome":x.get("display_name","")[:120]} for x in r]
+            except Exception as e: out[q]=str(e)
+            time.sleep(1.2)
+          json.dump(out,open("geo_sp.json","w"),ensure_ascii=False,indent=1)
+          PY
+          git init -q -b pesquisa && git add -A && git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm "geo SP" && git push -qf "$REPO" pesquisa
