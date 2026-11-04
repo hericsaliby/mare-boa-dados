@@ -1,0 +1,423 @@
+{
+ "Praia do Itaguá, Ubatuba": [
+  {
+   "lat": "-23.4582515",
+   "lon": "-45.0575631",
+   "tipo": "beach",
+   "nome": "Praia do Itaguá, Itaguá, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Rio Grande de Ubatuba foz, Ubatuba": [],
+ "Praia Vermelha do Norte, Ubatuba": [
+  {
+   "lat": "-23.4176625",
+   "lon": "-45.0372232",
+   "tipo": "beach",
+   "nome": "Praia Vermelha do Norte, Barra Seca, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Perequê-Açu, Ubatuba": [
+  {
+   "lat": "-23.4220634",
+   "lon": "-45.0626841",
+   "tipo": "beach",
+   "nome": "Praia do Perequê-Açu, Barra Seca, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-23.4230396",
+   "lon": "-45.0636187",
+   "tipo": "beach",
+   "nome": "Praia do Perequê-Açu, Perequê-Açu, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia da Enseada, Ubatuba": [
+  {
+   "lat": "-23.4937675",
+   "lon": "-45.0863967",
+   "tipo": "beach",
+   "nome": "Praia da Enseada, Enseada, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Saco da Ribeira, Ubatuba": [
+  {
+   "lat": "-23.5033174",
+   "lon": "-45.1268767",
+   "tipo": "suburb",
+   "nome": "Saco da Ribeira, Ubatuba, São Paulo, Região Sudeste, 11690-075, Brasil"
+  }
+ ],
+ "Picinguaba, Ubatuba": [
+  {
+   "lat": "-23.3784333",
+   "lon": "-44.8365643",
+   "tipo": "administrative",
+   "nome": "Picinguaba, Ubatuba, São Paulo, Região Sudeste, 11698-201, Brasil"
+  },
+  {
+   "lat": "-23.3782024",
+   "lon": "-44.8365666",
+   "tipo": "suburb",
+   "nome": "Picinguaba, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia da Lagoinha, Ubatuba": [
+  {
+   "lat": "-23.5234670",
+   "lon": "-45.2103612",
+   "tipo": "beach",
+   "nome": "Praia da Lagoinha, Sapé, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia Martim de Sá, Caraguatatuba": [
+  {
+   "lat": "-23.6285469",
+   "lon": "-45.3833702",
+   "tipo": "beach",
+   "nome": "Praia de Martim de Sá, Loteamento Vila Atlântica, Jardim Bela Vista, Caraguatatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Morro do Camaroeiro, Caraguatatuba": [],
+ "Rio Juqueriquerê, Caraguatatuba": [
+  {
+   "lat": "-23.6591153",
+   "lon": "-45.5305979",
+   "tipo": "river",
+   "nome": "Rio Juqueriquerê, Porto Novo, Caraguatatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Porto Novo, Caraguatatuba": [
+  {
+   "lat": "-23.6774070",
+   "lon": "-45.4417020",
+   "tipo": "administrative",
+   "nome": "Porto Novo, Caraguatatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia da Tabatinga, Caraguatatuba": [],
+ "Praia do Indaiá, Caraguatatuba": [
+  {
+   "lat": "-23.6440517",
+   "lon": "-45.4237917",
+   "tipo": "beach",
+   "nome": "Praia do Indaiá, Jardim Aruan, Caraguatatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia de Barequeçaba, São Sebastião": [
+  {
+   "lat": "-23.8286475",
+   "lon": "-45.4337319",
+   "tipo": "beach",
+   "nome": "Praia de Barequeçaba, Barequeçaba, São Sebastião, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Arrastão, São Sebastião": [
+  {
+   "lat": "-23.7709113",
+   "lon": "-45.4030984",
+   "tipo": "beach",
+   "nome": "Praia do Arrastão, São Francisco da Praia, São Sebastião, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia de Toque-Toque Grande, São Sebastião": [
+  {
+   "lat": "-23.8343206",
+   "lon": "-45.5109610",
+   "tipo": "beach",
+   "nome": "Praia do Toque-Toque Grande, Toque-Toque Grande, São Sebastião, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-23.8313329",
+   "lon": "-45.5214320",
+   "tipo": "beach",
+   "nome": "Praia Calhetas, Toque-Toque Grande, São Sebastião, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Boiçucanga, São Sebastião": [
+  {
+   "lat": "-23.7812604",
+   "lon": "-45.6222934",
+   "tipo": "suburb",
+   "nome": "Boiçucanga, Maresias, São Sebastião, São Paulo, Região Sudeste, 11618-213, Brasil"
+  }
+ ],
+ "Praia de Maresias, São Sebastião": [
+  {
+   "lat": "-23.7931139",
+   "lon": "-45.5572124",
+   "tipo": "beach",
+   "nome": "Praia de Maresias, Maresias, São Sebastião, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Ponta das Canas, Ilhabela": [
+  {
+   "lat": "-23.7343851",
+   "lon": "-45.3391634",
+   "tipo": "neighbourhood",
+   "nome": "Ponta das Canas, Ilhabela, São Paulo, Região Sudeste, 11635-600, Brasil"
+  },
+  {
+   "lat": "-23.7279525",
+   "lon": "-45.3414427",
+   "tipo": "lighthouse",
+   "nome": "Ponta das Canas, Rua Perimetral Norte, Armacão, Ilhabela, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-23.7281514",
+   "lon": "-45.3401559",
+   "tipo": "bus_stop",
+   "nome": "Ponta das Canas, Rua Perimetral Norte, Armacão, Ilhabela, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Perequê, Ilhabela": [
+  {
+   "lat": "-23.8096508",
+   "lon": "-45.3658706",
+   "tipo": "beach",
+   "nome": "Praia do Perequê, Pereque, Ilhabela, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Ponta da Sela, Ilhabela": [
+  {
+   "lat": "-23.8883333",
+   "lon": "-45.4616667",
+   "tipo": "lighthouse",
+   "nome": "Ponta da Sela, Alameda dos Manacás, Cambaquara, Ilhabela, São Paulo, Região Sudeste, 11641-000, Brasil"
+  }
+ ],
+ "Forte São João, Bertioga": [
+  {
+   "lat": "-23.8550694",
+   "lon": "-46.1347512",
+   "tipo": "barracks",
+   "nome": "Forte São João da Bertioga, Avenida Vicente de Carvalho, Jardim Rincão, Centro, Bertioga, São Paulo, Região Sudeste, 112"
+  }
+ ],
+ "Rio Itapanhaú, Bertioga": [
+  {
+   "lat": "-23.8003077",
+   "lon": "-46.0853292",
+   "tipo": "river",
+   "nome": "Rio Itapanhaú, Bertioga, Biritiba Mirim, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia da Enseada, Bertioga": [
+  {
+   "lat": "-23.8468371",
+   "lon": "-46.1319687",
+   "tipo": "beach",
+   "nome": "Praia da Enseada, Jardim Rincão, Centro, Bertioga, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Tombo, Guarujá": [
+  {
+   "lat": "-24.0143678",
+   "lon": "-46.2732775",
+   "tipo": "beach",
+   "nome": "Praia do Tombo, Pitangueiras, Guarujá, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia da Enseada, Guarujá": [
+  {
+   "lat": "-23.9892826",
+   "lon": "-46.2373622",
+   "tipo": "beach",
+   "nome": "Praia da Enseada, Enseada, Guarujá, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia de Pernambuco, Guarujá": [
+  {
+   "lat": "-23.9662904",
+   "lon": "-46.1855491",
+   "tipo": "beach",
+   "nome": "Praia de Pernambuco, Guarujá, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Perequê, Guarujá": [
+  {
+   "lat": "-23.9336966",
+   "lon": "-46.1809436",
+   "tipo": "beach",
+   "nome": "Praia do Perequê, Jardim Umuarama - Perequê, Guarujá, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Ponta do Munduba, Guarujá": [],
+ "Praia do Guaiúba, Guarujá": [
+  {
+   "lat": "-24.0176147",
+   "lon": "-46.2924210",
+   "tipo": "beach",
+   "nome": "Praia do Guaiúba, Guarujá, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Fortaleza da Barra Grande, Guarujá": [
+  {
+   "lat": "-23.9947248",
+   "lon": "-46.3069553",
+   "tipo": "attraction",
+   "nome": "Fortaleza de Santo Amaro da Barra Grande, Rua Messias Borges, Vila Santa Cruz dos Navegantes, Vila Ligia, Guarujá, São P"
+  }
+ ],
+ "Ponta da Praia, Santos": [
+  {
+   "lat": "-23.9862005",
+   "lon": "-46.3017868",
+   "tipo": "administrative",
+   "nome": "Ponta da Praia, Santos, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-23.9855953",
+   "lon": "-46.3096629",
+   "tipo": "beach",
+   "nome": "Ponta da Praia, Santos, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Emissário Submarino, Santos": [
+  {
+   "lat": "-23.9702772",
+   "lon": "-46.3502905",
+   "tipo": "park",
+   "nome": "Parque Quebra-Mar, Pompéia, José Menino, Santos, São Paulo, Região Sudeste, 11065-201, Brasil"
+  }
+ ],
+ "Ilha Porchat, São Vicente": [
+  {
+   "lat": "-23.9797539",
+   "lon": "-46.3702485",
+   "tipo": "island",
+   "nome": "Ilha Porchat, Alameda Paulo Gonçalves, Boa Vista, São Vicente, Vicente de Carvalho, São Paulo, Região Sudeste, 11310-911"
+  }
+ ],
+ "Ponte Pênsil, São Vicente": [
+  {
+   "lat": "-23.9754649",
+   "lon": "-46.3888267",
+   "tipo": "secondary",
+   "nome": "Ponte Pênsil, Parque Bitaru, São Vicente, Vicente de Carvalho, São Paulo, Região Sudeste, 11310-090, Brasil"
+  }
+ ],
+ "Plataforma de Pesca, Mongaguá": [
+  {
+   "lat": "-24.1340523",
+   "lon": "-46.6927660",
+   "tipo": "ticket",
+   "nome": "Bilheteria da Plataforma de Pesca Amadora, Avenida Governador Mário Covas Júnior, Agenor de Campos, Mongaguá, São Paulo,"
+  },
+  {
+   "lat": "-24.1356826",
+   "lon": "-46.6916892",
+   "tipo": "pier",
+   "nome": "Plataforma de Pesca Amadora, Avenida Governador Mário Covas Júnior, Agenor de Campos, Mongaguá, São Paulo, Região Sudest"
+  }
+ ],
+ "Praia do Forte, Praia Grande": [
+  {
+   "lat": "-24.0169095",
+   "lon": "-46.4020328",
+   "tipo": "beach",
+   "nome": "Praia do Canto do Forte, Sitio do Campo, Praia Grande, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Canto do Forte, Praia Grande": [
+  {
+   "lat": "-24.0101679",
+   "lon": "-46.4027321",
+   "tipo": "administrative",
+   "nome": "Canto do Forte, Praia Grande, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Rio Itanhaém, Itanhaém": [
+  {
+   "lat": "-24.0372843",
+   "lon": "-46.7447690",
+   "tipo": "river",
+   "nome": "Rio Itanhaém, Itanhaém, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-24.0288483",
+   "lon": "-46.7222793",
+   "tipo": "river",
+   "nome": "Rio Itanhaém, Rio Branco, Itanhaém, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Praia do Guaraú, Peruíbe": [
+  {
+   "lat": "-24.3732219",
+   "lon": "-47.0150118",
+   "tipo": "beach",
+   "nome": "Praia de Guaraú, Guaraú, Peruíbe, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Barra do Una, Peruíbe": [
+  {
+   "lat": "-24.4407256",
+   "lon": "-47.0714299",
+   "tipo": "village",
+   "nome": "Vila da Barra do Una, Peruíbe, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-24.4398113",
+   "lon": "-47.0661722",
+   "tipo": "beach",
+   "nome": "Praia da Barra do Una, Peruíbe, Iguape, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Iguape": [
+  {
+   "lat": "-24.5918174",
+   "lon": "-47.4849467",
+   "tipo": "administrative",
+   "nome": "Iguape, São Paulo, Região Sudeste, 11920-000, Brasil"
+  },
+  {
+   "lat": "-24.7042692",
+   "lon": "-47.5563733",
+   "tipo": "administrative",
+   "nome": "Iguape, São Paulo, Região Sudeste, 11920-000, Brasil"
+  }
+ ],
+ "Barra do Ribeira, Iguape": [
+  {
+   "lat": "-24.6486975",
+   "lon": "-47.3822875",
+   "tipo": "village",
+   "nome": "Barra do Ribeira, Iguape, São Paulo, Região Sudeste, 11920-000, Brasil"
+  }
+ ],
+ "Mar Pequeno, Iguape": [
+  {
+   "lat": "-24.7521803",
+   "lon": "-47.6170805",
+   "tipo": "tidal_channel",
+   "nome": "Mar Pequeno, Cananéia, Iguape, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-24.7051695",
+   "lon": "-47.4850912",
+   "tipo": "tidal_channel",
+   "nome": "Mar Pequeno, Iguape, São Paulo, Região Sudeste, Brasil"
+  },
+  {
+   "lat": "-24.7246568",
+   "lon": "-47.5570284",
+   "tipo": "tidal_channel",
+   "nome": "Mar Pequeno, Rocio, Aldeia Indígena, Iguape, São Paulo, Região Sudeste, 11920-000, Brasil"
+  }
+ ],
+ "Parque Estadual Marinho da Laje de Santos": [
+  {
+   "lat": "-24.3086895",
+   "lon": "-46.1751621",
+   "tipo": "protected_area",
+   "nome": "Parque Estadual Marinho da Laje de Santos, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Estação Ecológica Tupinambás": [
+  {
+   "lat": "-23.5464226",
+   "lon": "-45.0269189",
+   "tipo": "protected_area",
+   "nome": "Estação Ecológica Tupinambás, Ubatuba, São Paulo, Região Sudeste, Brasil"
+  }
+ ],
+ "Parque Estadual Ilha Anchieta": []
+}
