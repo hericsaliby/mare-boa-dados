@@ -153,6 +153,24 @@ for tipo, w0 in BASE.items():
     novo = {k: round(v / tot, 4) for k, v in novo.items()}
     pesos["tipos"][tipo] = {"n": len(g), "ajustado": True, "conf": round(conf, 2), "w": novo}
     print(tipo, "n=", len(g), "conf=", round(conf, 2), novo)
+# ---------- véspera de frente fria: dá mais peixe? ----------
+# O app começa com um bônus pequeno (+4) porque isso ainda é hipótese. Com pelo menos 30 saídas na véspera e 30 fora dela,
+# mede a diferença na taxa de saída boa e transforma em bônus (de -5 a +9 pontos), misturado com o +4 inicial
+# conforme o número de pescarias (com 30 saídas na véspera, metade de cada).
+MIN_FRENTE = 30
+na_vespera = lambda s: isinstance((s.get("v") or {}).get("pre"), (int, float)) and s["v"]["pre"] > .3
+pre = [s for s in amostras if na_vespera(s)]
+fora = [s for s in amostras if not na_vespera(s)]
+if len(pre) >= MIN_FRENTE and len(fora) >= MIN_FRENTE:
+    tx_pre, tx_fora = sum(map(boa, pre)) / len(pre), sum(map(boa, fora)) / len(fora)
+    conf = len(pre) / (len(pre) + MIN_FRENTE)
+    medido = 2 * (tx_pre - tx_fora)              # 10 pontos de diferença na taxa de saída boa = +2 na nota
+    bonus = max(-.5, min(.9, conf * medido + (1 - conf) * .4))  # parte do +4 do app e vai para o medido
+    pesos["frente"] = {"n": len(pre), "n_fora": len(fora), "boa_vespera": round(100 * tx_pre), "boa_fora": round(100 * tx_fora),
+                       "ajustado": True, "bonus": round(bonus, 2)}
+else:
+    pesos["frente"] = {"n": len(pre), "n_fora": len(fora), "ajustado": False, "minimo": MIN_FRENTE}
+print("frente:", pesos["frente"])
 json.dump(pesos, open(os.path.join(OUT, "pesos.json"), "w"), ensure_ascii=False, separators=(",", ":"))
 
 
