@@ -9,17 +9,24 @@ permissions:
 jobs:
   baixa:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Baixa as tábuas de maré do IO-USP (Ubatuba, Santos, Cananéia) e extrai o texto
+      - name: Fontes de maré de SP (FEMAR, IOC, IO-USP, Marinha)
         env:
           REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         run: |
-          sudo apt-get install -y -qq poppler-utils >/dev/null
           mkdir out && cd out
-          for u in https://www3.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf https://www.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2024_2025.pdf; do
-            f=$(basename "$u"); curl -sSL -m 120 -A "Mozilla/5.0" -o "$f" "$u" || echo "falhou $u"
-            [ -s "$f" ] && pdftotext -layout "$f" "${f%.pdf}.txt" || true
-          done
-          ls -la
-          git init -q -b pesquisa && git add -A && git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm "IO-USP tábuas" && git push -qf "$REPO" pesquisa
+          g(){ curl -sSL -m 90 -A "Mozilla/5.0 (mare-boa pesquisa)" -o "$1" "$2" || echo "falhou $2"; echo "$1 $(wc -c <"$1" 2>/dev/null)"; }
+          g femar_indice.html "http://www.fundacaofemar.org.br/biblioteca/emb/indice.html"
+          g femar_raiz.html "http://www.fundacaofemar.org.br/biblioteca/emb/"
+          g ioc_lista.html "https://www.ioc-sealevelmonitoring.org/list.php?showall=all&output=general&order=country"
+          g iousp_tabuas.html "https://www.io.usp.br/index.php/tabuas-de-mares"
+          g iousp_home.html "https://www.io.usp.br/"
+          g t2627_www.pdf "https://www.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf"
+          g t2627_www3.pdf "https://www3.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf"
+          g chm_tabuas.html "https://www.marinha.mil.br/chm/tabuas-de-mare"
+          # páginas das estações da FEMAR que citam SP
+          grep -oiE 'href="[^"]+"' femar_indice.html | sed 's/href="//I;s/"$//' | sort -u > femar_links.txt || true
+          n=0; while read -r l; do case "$l" in *[Ss][Pp]*|*santos*|*ubatuba*|*sebastiao*|*caragua*|*guaruja*|*bertioga*|*cananeia*|*vicente*|*iguape*|*itanhaem*|*peruibe*|*ilhabela*|*anchieta*) n=$((n+1)); [ $n -le 80 ] && g "femar_$(echo "$l" | tr '/:?&=' '_____' | tail -c 80)" "http://www.fundacaofemar.org.br/biblioteca/emb/$l";; esac; done < femar_links.txt
+          ls -la | head -120
+          git init -q -b pesquisa && git add -A && git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm "fontes SP" && git push -qf "$REPO" pesquisa
