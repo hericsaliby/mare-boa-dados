@@ -22,10 +22,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q pygrib numpy rasterio pillow
+      - run: pip install -q pygrib numpy rasterio pillow copernicusmarine xarray netCDF4
       - name: Baixa os modelos e grava no branch "dados"
         env:
           REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.CMEMS_USER }}
+          COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.CMEMS_PASS }}
         run: |
           git clone -q --depth 1 -b dados "$REPO" dados
           mkdir novo

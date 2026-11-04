@@ -391,7 +391,85 @@ def from_old(old, before):
 
 
 # ---------------- Água e correntes (Open-Meteo, 3x por semana) ----------------
+def cmems_mar(OVG):
+    """Água e correntes do Copernicus Marine (modelo global 1/12°, com dados de satélite assimilados; uso comercial
+    permitido com crédito). Precisa de COPERNICUSMARINE_SERVICE_USERNAME e _PASSWORD. Sem eles, devolve None."""
+    if not (os.environ.get("COPERNICUSMARINE_SERVICE_USERNAME") and os.environ.get("COPERNICUSMARINE_SERVICE_PASSWORD")):
+        return None
+    try:
+        import copernicusmarine
+        import numpy as np
+        import xarray as xr
+    except Exception as e:
+        log("Copernicus: biblioteca ausente", e)
+        return None
+    m = 0.2
+    ini = (NOW - dt.timedelta(days=3)).replace(minute=0, second=0, microsecond=0, tzinfo=None)
+    fim = (NOW + dt.timedelta(days=7)).replace(minute=0, second=0, microsecond=0, tzinfo=None)
+    arq = os.path.join(D, "_cmems_tmp.nc")
+    try:
+        copernicusmarine.subset(dataset_id="cmems_mod_glo_phy_anfc_0.083deg_PT1H-m", variables=["thetao", "uo", "vo"],
+                                minimum_longitude=min(OVG["lo0"], OVG["lo1"]) - m, maximum_longitude=max(OVG["lo0"], OVG["lo1"]) + m,
+                                minimum_latitude=min(OVG["la0"], OVG["la1"]) - m, maximum_latitude=max(OVG["la0"], OVG["la1"]) + m,
+                                start_datetime=ini.strftime("%Y-%m-%dT%H:%M:%S"), end_datetime=fim.strftime("%Y-%m-%dT%H:%M:%S"),
+                                minimum_depth=0, maximum_depth=1, output_filename=os.path.basename(arq), output_directory=D,
+                                overwrite=True, disable_progress_bar=True)
+        ds = xr.open_dataset(arq)
+    except Exception as e:
+        log("Copernicus: erro", e)
+        return None
+    try:
+        if "depth" in ds.dims:
+            ds = ds.isel(depth=0)
+        lat, lon = ds["latitude"].values, ds["longitude"].values
+        tt = [int(x) for x in (ds["time"].values.astype("datetime64[s]").astype("int64"))]
+        TH, U, V = ds["thetao"].values, ds["uo"].values, ds["vo"].values  # (tempo, lat, lon)
+        mar0 = ~np.isnan(TH[0])
+        out = {"at": int(time.time()), "grid": OVG, "t": tt, "land": [], "sst": [], "cv": [], "cd": [], "fonte": "Copernicus Marine"}
+        r1 = lambda a, d: [None if (v is None or v != v) else round(float(v), d) for v in a]
+        for i in range(OVG["nla"]):
+            for j in range(OVG["nlo"]):
+                la = OVG["la0"] + (OVG["la1"] - OVG["la0"]) * i / (OVG["nla"] - 1)
+                lo = OVG["lo0"] + (OVG["lo1"] - OVG["lo0"]) * j / (OVG["nlo"] - 1)
+                # célula de mar mais perto (até ~7 km), como o "cell_selection=sea" da Open-Meteo
+                ii, jj = np.abs(lat - la).argmin(), np.abs(lon - lo).argmin()
+                best = None
+                for di in range(-1, 2):
+                    for dj in range(-1, 2):
+                        a, b = ii + di, jj + dj
+                        if 0 <= a < len(lat) and 0 <= b < len(lon) and mar0[a, b]:
+                            d = math.hypot(lat[a] - la, (lon[b] - lo) * math.cos(math.radians(la)))
+                            if best is None or d < best[0]:
+                                best = (d, a, b)
+                if best is None:
+                    out["land"].append(True)
+                    for k in ("sst", "cv", "cd"):
+                        out[k].append([None] * len(tt))
+                    continue
+                _, a, b = best
+                u, v = U[:, a, b], V[:, a, b]
+                out["land"].append(bool(best[0] > 0.06))
+                out["sst"].append(r1(TH[:, a, b], 1))
+                out["cv"].append(r1(np.hypot(u, v) * 3.6, 2))  # m/s → km/h, como a Open-Meteo
+                out["cd"].append(r1((np.degrees(np.arctan2(u, v)) + 360) % 360, 0))  # para onde a corrente vai
+        log("Copernicus: água e correntes", len(tt), "horários,", sum(not x for x in out["land"]), "pontos de mar")
+        return out
+    finally:
+        try:
+            ds.close()
+            os.remove(arq)
+        except Exception:
+            pass
+
+
 def mar_run(old, OVG):
+    novo = None
+    if not (old and old.get("fonte") == "Copernicus Marine" and old.get("grid") == OVG and time.time() - old.get("at", 0) < 20 * 3600):
+        novo = cmems_mar(OVG)  # o Copernicus atualiza todo dia
+    if novo:
+        return novo
+    if old and old.get("fonte") == "Copernicus Marine" and old.get("grid") == OVG and time.time() - old.get("at", 0) < 3 * 86400:
+        return old
     if old and old.get("grid") == OVG:
         idade = time.time() - old.get("at", 0)
         if idade < 4 * 86400 and not (NOW.weekday() in (0, 2, 4) and idade > 30 * 3600):
