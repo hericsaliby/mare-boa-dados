@@ -1,0 +1,25 @@
+name: Pesquisa (temporário)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/pesquisa.yml"]
+permissions:
+  contents: write
+jobs:
+  baixa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Baixa as tábuas de maré do IO-USP (Ubatuba, Santos, Cananéia) e extrai o texto
+        env:
+          REPO: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          mkdir out && cd out
+          for u in https://www3.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2026_2027.pdf https://www.io.usp.br/images/publicacoes/tabuas/tabua_mares_uba_san_can_2024_2025.pdf; do
+            f=$(basename "$u"); curl -sSL -m 120 -A "Mozilla/5.0" -o "$f" "$u" || echo "falhou $u"
+            [ -s "$f" ] && pdftotext -layout "$f" "${f%.pdf}.txt" || true
+          done
+          ls -la
+          git init -q -b pesquisa && git add -A && git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -qm "IO-USP tábuas" && git push -qf "$REPO" pesquisa
