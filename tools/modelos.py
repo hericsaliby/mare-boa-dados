@@ -425,17 +425,18 @@ def cmems_mar(OVG):
         tt = [int(x) for x in (ds["time"].values.astype("datetime64[s]").astype("int64"))]
         TH, U, V = ds["thetao"].values, ds["uo"].values, ds["vo"].values  # (tempo, lat, lon)
         mar0 = ~np.isnan(TH[0])
-        out = {"at": int(time.time()), "grid": OVG, "t": tt, "land": [], "sst": [], "cv": [], "cd": [], "fonte": "Copernicus Marine"}
+        out = {"at": int(time.time()), "grid": OVG, "t": tt, "land": [], "sst": [], "cv": [], "cd": [], "fonte": "Copernicus Marine", "v": 2}
         r1 = lambda a, d: [None if (v is None or v != v) else round(float(v), d) for v in a]
         for i in range(OVG["nla"]):
             for j in range(OVG["nlo"]):
                 la = OVG["la0"] + (OVG["la1"] - OVG["la0"]) * i / (OVG["nla"] - 1)
                 lo = OVG["lo0"] + (OVG["lo1"] - OVG["lo0"]) * j / (OVG["nlo"] - 1)
-                # célula de mar mais perto (até ~7 km), como o "cell_selection=sea" da Open-Meteo
+                # célula de mar mais perto (busca até ~2 células); só vira "terra" se a mais perto passar de ~13 km.
+                # A grade do Copernicus (~9 km) trata como terra muita água de baía; assim as baías continuam cobertas.
                 ii, jj = np.abs(lat - la).argmin(), np.abs(lon - lo).argmin()
                 best = None
-                for di in range(-1, 2):
-                    for dj in range(-1, 2):
+                for di in range(-2, 3):
+                    for dj in range(-2, 3):
                         a, b = ii + di, jj + dj
                         if 0 <= a < len(lat) and 0 <= b < len(lon) and mar0[a, b]:
                             d = math.hypot(lat[a] - la, (lon[b] - lo) * math.cos(math.radians(la)))
@@ -448,7 +449,7 @@ def cmems_mar(OVG):
                     continue
                 _, a, b = best
                 u, v = U[:, a, b], V[:, a, b]
-                out["land"].append(bool(best[0] > 0.06))
+                out["land"].append(bool(best[0] > 0.12))
                 out["sst"].append(r1(TH[:, a, b], 1))
                 out["cv"].append(r1(np.hypot(u, v) * 3.6, 2))  # m/s → km/h, como a Open-Meteo
                 out["cd"].append(r1((np.degrees(np.arctan2(u, v)) + 360) % 360, 0))  # para onde a corrente vai
@@ -464,7 +465,7 @@ def cmems_mar(OVG):
 
 def mar_run(old, OVG):
     novo = None
-    if not (old and old.get("fonte") == "Copernicus Marine" and old.get("grid") == OVG and time.time() - old.get("at", 0) < 20 * 3600):
+    if not (old and old.get("fonte") == "Copernicus Marine" and old.get("v") == 2 and old.get("grid") == OVG and time.time() - old.get("at", 0) < 20 * 3600):
         novo = cmems_mar(OVG)  # o Copernicus atualiza todo dia
     if novo:
         return novo
