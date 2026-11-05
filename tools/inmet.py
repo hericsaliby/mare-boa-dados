@@ -2,7 +2,8 @@
 
 Fonte: https://apiprevmet3.inmet.gov.br/avisos/ativos (avisos de hoje e dos próximos dias, com o desenho da área).
 O INMET permite reproduzir o conteúdo citando a fonte.
-Saída: alertas_inmet.json = {"at", "fonte", "alertas": [{id, evento, sev, nivel, cor, ini, fim, riscos, instr, estados, areas}]}
+Saída: alertas_inmet.json = {"at", "fonte", "alertas": [{id, evento, sev, nivel, cor, ini, fim, riscos, instr, estados, mun, areas}]}
+  mun: lista oficial de municípios atingidos (só SC, PR e SP), a referência principal do app
   nivel: 1 = Perigo Potencial (amarelo), 2 = Perigo (laranja), 3 = Grande Perigo (vermelho)
   areas: lista de polígonos [[lat, lon], ...] (simplificados)
 Se o INMET não responder, mantém o arquivo anterior.
@@ -88,6 +89,26 @@ def lista(x):
     return [s] if s else []
 
 
+# municípios dos pontos do app (o app liga cada ponto ao seu município; os pontos criados pelo usuário usam o desenho da área)
+COSTA = {"Itapoá - SC", "São Francisco do Sul - SC", "Balneário Barra do Sul - SC", "Barra Velha - SC", "Itajaí - SC",
+         "Navegantes - SC", "Balneário Camboriú - SC", "Bombinhas - SC", "Porto Belo - SC", "Governador Celso Ramos - SC",
+         "Florianópolis - SC", "São José - SC", "Biguaçu - SC", "Palhoça - SC", "Garopaba - SC", "Imbituba - SC",
+         "Laguna - SC", "Balneário Rincão - SC", "Passo de Torres - SC", "Pontal do Paraná - PR", "Paranaguá - PR",
+         "Antonina - PR", "Matinhos - PR", "Guaratuba - PR", "Ubatuba - SP", "Caraguatatuba - SP", "São Sebastião - SP",
+         "Ilhabela - SP", "Bertioga - SP", "Guarujá - SP", "Santos - SP", "São Vicente - SP", "Praia Grande - SP",
+         "Mongaguá - SP", "Itanhaém - SP", "Peruíbe - SP", "Iguape - SP", "Ilha Comprida - SP", "Cananéia - SP"}
+
+
+def municipios(txt):
+    """Lista oficial de municípios do aviso ("Florianópolis - SC (4205407)"), só dos estados do app."""
+    out = []
+    for parte in str(txt or "").split(","):
+        nome = parte.split("(")[0].strip()
+        if nome in COSTA:
+            out.append(nome)
+    return out
+
+
 def main():
     j = baixa()
     if j is None:
@@ -111,7 +132,7 @@ def main():
             out.append({"id": str(cid), "evento": a.get("descricao") or "Aviso", "sev": sev, "nivel": NIVEL.get(sev, 1),
                         "cor": a.get("aviso_cor"), "ini": quando(a.get("inicio") or ""), "fim": quando(a.get("fim") or ""),
                         "riscos": lista(a.get("riscos"))[:4], "instr": lista(a.get("instrucoes"))[:6],
-                        "estados": a.get("estados") or "", "areas": areas})
+                        "estados": a.get("estados") or "", "mun": municipios(a.get("municipios")), "areas": areas})
     out.sort(key=lambda x: (x["ini"] or 0, -x["nivel"]))
     with open(os.path.join(OUT, NOME), "w", encoding="utf-8") as f:
         json.dump({"at": int(time.time() * 1000), "fonte": "INMET (avisos.inmet.gov.br)", "alertas": out}, f,
