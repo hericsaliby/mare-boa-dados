@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/epagri.yml", "tools/historico.py", "tools/mares.py", "tools/coleta_epagri.py", "tools/temp_mar.py", "tools/estacoes.json"]
+    paths: [".github/workflows/epagri.yml", "tools/inmet.py", "tools/historico.py", "tools/mares.py", "tools/coleta_epagri.py", "tools/temp_mar.py", "tools/estacoes.json"]
 permissions:
   contents: read
 concurrency: epagri
@@ -26,6 +26,7 @@ jobs:
           python3 tools/coleta_epagri.py old out
           python3 tools/historico.py old out
           python3 tools/temp_mar.py old out || true
+          python3 tools/inmet.py old out || true
           pip install -q utide numpy >/dev/null 2>&1 || true
           python3 tools/mares.py old out || true
           # arquivos do robô de modelos (outro workflow) seguem como estão
