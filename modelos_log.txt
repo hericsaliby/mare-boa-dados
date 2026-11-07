@@ -1,0 +1,8 @@
+2026-11-07T06:00:00+00:00
+GFS: rodada 2026110700 137 horários + 78 do passado
+ECMWF: rodada 2026110612 já processada
+Ondas: rodada 2026110700 57 horários + 62 do passado
+Vento amplo: 58 horários, 945 pontos
+Região sc ok (água/correntes de 06/11 17:32)
+Região pr ok (água/correntes de 06/11 23:55)
+Região sp ok (água/correntes de 06/11 23:55)

@@ -1,0 +1,395 @@
+{
+  "cols": [
+   {"id":"","label":"Topping","pattern":"","type":"string"},
+   {"id":"","label":"Mare Obser. (MO)","pattern":"","type":"number"},
+		{"id":"","label":"Mare Astron (MA)","pattern":"","type":"number"},
+		{"id":"","label":"Mare Residual (MO-MA)","pattern":"","type":"number"},
+		{"id":"","label":"Mare Residual Prevista","pattern":"","type":"number"},
+		{"id":"","label":"NMM","pattern":"","type":"number"}
+   ],
+  "rows": [
+ {"c":[{"v":"06/11 00:00","f":null},{"v":"   52.50","f":null},{"v":"   26.00","f":null},{"v":"   26.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 00:15","f":null},{"v":"   53.50","f":null},{"v":"   26.00","f":null},{"v":"   27.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 00:30","f":null},{"v":"   52.30","f":null},{"v":"   25.00","f":null},{"v":"   27.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 00:45","f":null},{"v":"   54.00","f":null},{"v":"   25.00","f":null},{"v":"   29.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 01:00","f":null},{"v":"   51.10","f":null},{"v":"   24.00","f":null},{"v":"   27.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 01:15","f":null},{"v":"   47.50","f":null},{"v":"   23.00","f":null},{"v":"   24.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 01:30","f":null},{"v":"   49.00","f":null},{"v":"   23.00","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 01:45","f":null},{"v":"   52.70","f":null},{"v":"   22.00","f":null},{"v":"   30.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 02:00","f":null},{"v":"   50.50","f":null},{"v":"   21.00","f":null},{"v":"   29.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 02:15","f":null},{"v":"   49.20","f":null},{"v":"   20.00","f":null},{"v":"   29.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 02:30","f":null},{"v":"   48.20","f":null},{"v":"   19.00","f":null},{"v":"   29.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 02:45","f":null},{"v":"   47.30","f":null},{"v":"   18.00","f":null},{"v":"   29.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 03:00","f":null},{"v":"   47.40","f":null},{"v":"   17.00","f":null},{"v":"   30.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 03:15","f":null},{"v":"   47.50","f":null},{"v":"   15.00","f":null},{"v":"   32.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 03:30","f":null},{"v":"   46.50","f":null},{"v":"   13.00","f":null},{"v":"   33.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 03:45","f":null},{"v":"   42.70","f":null},{"v":"   12.00","f":null},{"v":"   30.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 04:00","f":null},{"v":"   41.20","f":null},{"v":"    9.00","f":null},{"v":"   32.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 04:15","f":null},{"v":"   40.70","f":null},{"v":"    7.00","f":null},{"v":"   33.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 04:30","f":null},{"v":"   39.70","f":null},{"v":"    5.00","f":null},{"v":"   34.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 04:45","f":null},{"v":"   38.80","f":null},{"v":"    3.00","f":null},{"v":"   35.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 05:00","f":null},{"v":"   36.20","f":null},{"v":"    1.00","f":null},{"v":"   35.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 05:15","f":null},{"v":"   35.80","f":null},{"v":"   -1.00","f":null},{"v":"   36.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 05:30","f":null},{"v":"   34.70","f":null},{"v":"   -3.00","f":null},{"v":"   37.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 05:45","f":null},{"v":"   31.80","f":null},{"v":"   -4.00","f":null},{"v":"   35.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 06:00","f":null},{"v":"   28.40","f":null},{"v":"   -5.00","f":null},{"v":"   33.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 06:15","f":null},{"v":"   27.70","f":null},{"v":"   -6.00","f":null},{"v":"   33.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 06:30","f":null},{"v":"   29.50","f":null},{"v":"   -6.00","f":null},{"v":"   35.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 06:45","f":null},{"v":"   31.90","f":null},{"v":"   -6.00","f":null},{"v":"   37.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 07:00","f":null},{"v":"   28.80","f":null},{"v":"   -5.00","f":null},{"v":"   33.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 07:15","f":null},{"v":"   31.10","f":null},{"v":"   -4.00","f":null},{"v":"   35.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 07:30","f":null},{"v":"   29.20","f":null},{"v":"   -3.00","f":null},{"v":"   32.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 07:45","f":null},{"v":"   33.00","f":null},{"v":"   -1.00","f":null},{"v":"   34.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 08:00","f":null},{"v":"   34.90","f":null},{"v":"    1.00","f":null},{"v":"   33.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 08:15","f":null},{"v":"   37.50","f":null},{"v":"    3.00","f":null},{"v":"   34.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 08:30","f":null},{"v":"   38.70","f":null},{"v":"    5.00","f":null},{"v":"   33.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 08:45","f":null},{"v":"   40.80","f":null},{"v":"    7.00","f":null},{"v":"   33.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 09:00","f":null},{"v":"   41.90","f":null},{"v":"    9.00","f":null},{"v":"   32.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 09:15","f":null},{"v":"   42.30","f":null},{"v":"   10.00","f":null},{"v":"   32.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 09:30","f":null},{"v":"   47.90","f":null},{"v":"   12.00","f":null},{"v":"   35.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 09:45","f":null},{"v":"   47.50","f":null},{"v":"   14.00","f":null},{"v":"   33.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 10:00","f":null},{"v":"   48.20","f":null},{"v":"   15.00","f":null},{"v":"   33.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 10:15","f":null},{"v":"   48.20","f":null},{"v":"   16.00","f":null},{"v":"   32.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 10:30","f":null},{"v":"   49.80","f":null},{"v":"   17.00","f":null},{"v":"   32.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 10:45","f":null},{"v":"   49.60","f":null},{"v":"   18.00","f":null},{"v":"   31.60","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 11:00","f":null},{"v":"   50.70","f":null},{"v":"   19.00","f":null},{"v":"   31.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 11:15","f":null},{"v":"   50.20","f":null},{"v":"   20.00","f":null},{"v":"   30.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 11:30","f":null},{"v":"   48.80","f":null},{"v":"   20.00","f":null},{"v":"   28.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 11:45","f":null},{"v":"   49.70","f":null},{"v":"   21.00","f":null},{"v":"   28.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 12:00","f":null},{"v":"   48.40","f":null},{"v":"   21.00","f":null},{"v":"   27.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 12:15","f":null},{"v":"   49.70","f":null},{"v":"   22.00","f":null},{"v":"   27.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 12:30","f":null},{"v":"   48.90","f":null},{"v":"   22.00","f":null},{"v":"   26.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 12:45","f":null},{"v":"   49.00","f":null},{"v":"   22.00","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 13:00","f":null},{"v":"   48.70","f":null},{"v":"   21.00","f":null},{"v":"   27.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 13:15","f":null},{"v":"   46.50","f":null},{"v":"   21.00","f":null},{"v":"   25.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 13:30","f":null},{"v":"   49.50","f":null},{"v":"   21.00","f":null},{"v":"   28.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 13:45","f":null},{"v":"   47.70","f":null},{"v":"   20.00","f":null},{"v":"   27.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 14:00","f":null},{"v":"   47.20","f":null},{"v":"   20.00","f":null},{"v":"   27.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 14:15","f":null},{"v":"   44.30","f":null},{"v":"   19.00","f":null},{"v":"   25.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 14:30","f":null},{"v":"   45.60","f":null},{"v":"   18.00","f":null},{"v":"   27.60","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 14:45","f":null},{"v":"   43.50","f":null},{"v":"   17.00","f":null},{"v":"   26.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 15:00","f":null},{"v":"   44.20","f":null},{"v":"   16.00","f":null},{"v":"   28.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 15:15","f":null},{"v":"   45.10","f":null},{"v":"   15.00","f":null},{"v":"   30.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 15:30","f":null},{"v":"   47.20","f":null},{"v":"   14.00","f":null},{"v":"   33.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 15:45","f":null},{"v":"   45.40","f":null},{"v":"   12.00","f":null},{"v":"   33.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 16:00","f":null},{"v":"   46.10","f":null},{"v":"   11.00","f":null},{"v":"   35.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 16:15","f":null},{"v":"   43.20","f":null},{"v":"    9.00","f":null},{"v":"   34.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 16:30","f":null},{"v":"   41.90","f":null},{"v":"    8.00","f":null},{"v":"   33.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 16:45","f":null},{"v":"   41.90","f":null},{"v":"    7.00","f":null},{"v":"   34.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 17:00","f":null},{"v":"   39.00","f":null},{"v":"    5.00","f":null},{"v":"   34.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 17:15","f":null},{"v":"   40.30","f":null},{"v":"    5.00","f":null},{"v":"   35.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 17:30","f":null},{"v":"   36.80","f":null},{"v":"    4.00","f":null},{"v":"   32.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 17:45","f":null},{"v":"   39.50","f":null},{"v":"    3.00","f":null},{"v":"   36.50","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 18:00","f":null},{"v":"   39.00","f":null},{"v":"    2.00","f":null},{"v":"   37.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 18:15","f":null},{"v":"   37.20","f":null},{"v":"    2.00","f":null},{"v":"   35.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 18:30","f":null},{"v":"   38.60","f":null},{"v":"    2.00","f":null},{"v":"   36.60","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 18:45","f":null},{"v":"   40.30","f":null},{"v":"    2.00","f":null},{"v":"   38.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 19:00","f":null},{"v":"   38.10","f":null},{"v":"    2.00","f":null},{"v":"   36.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 19:15","f":null},{"v":"   39.70","f":null},{"v":"    3.00","f":null},{"v":"   36.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 19:30","f":null},{"v":"   41.60","f":null},{"v":"    4.00","f":null},{"v":"   37.60","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 19:45","f":null},{"v":"   42.90","f":null},{"v":"    5.00","f":null},{"v":"   37.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 20:00","f":null},{"v":"   44.10","f":null},{"v":"    7.00","f":null},{"v":"   37.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 20:15","f":null},{"v":"   45.90","f":null},{"v":"   10.00","f":null},{"v":"   35.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 20:30","f":null},{"v":"   50.40","f":null},{"v":"   12.00","f":null},{"v":"   38.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 20:45","f":null},{"v":"   51.40","f":null},{"v":"   14.00","f":null},{"v":"   37.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 21:00","f":null},{"v":"   51.20","f":null},{"v":"   17.00","f":null},{"v":"   34.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 21:15","f":null},{"v":"   53.40","f":null},{"v":"   20.00","f":null},{"v":"   33.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 21:30","f":null},{"v":"   54.90","f":null},{"v":"   22.00","f":null},{"v":"   32.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 21:45","f":null},{"v":"   57.00","f":null},{"v":"   24.00","f":null},{"v":"   33.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 22:00","f":null},{"v":"   56.80","f":null},{"v":"   26.00","f":null},{"v":"   30.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 22:15","f":null},{"v":"   58.30","f":null},{"v":"   28.00","f":null},{"v":"   30.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 22:30","f":null},{"v":"   58.90","f":null},{"v":"   29.00","f":null},{"v":"   29.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 22:45","f":null},{"v":"   60.30","f":null},{"v":"   30.00","f":null},{"v":"   30.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 23:00","f":null},{"v":"   61.40","f":null},{"v":"   31.00","f":null},{"v":"   30.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 23:15","f":null},{"v":"   59.90","f":null},{"v":"   31.00","f":null},{"v":"   28.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 23:30","f":null},{"v":"   60.10","f":null},{"v":"   31.00","f":null},{"v":"   29.10","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"06/11 23:45","f":null},{"v":"   61.00","f":null},{"v":"   31.00","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 00:00","f":null},{"v":"   61.00","f":null},{"v":"   31.00","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 00:15","f":null},{"v":"   61.00","f":null},{"v":"   30.00","f":null},{"v":"   31.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 00:30","f":null},{"v":"   60.00","f":null},{"v":"   30.00","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 00:45","f":null},{"v":"   60.90","f":null},{"v":"   29.00","f":null},{"v":"   31.90","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 01:00","f":null},{"v":"   58.20","f":null},{"v":"   28.00","f":null},{"v":"   30.20","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 01:15","f":null},{"v":"   54.80","f":null},{"v":"   27.00","f":null},{"v":"   27.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 01:30","f":null},{"v":"   62.40","f":null},{"v":"   26.00","f":null},{"v":"   36.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 01:45","f":null},{"v":"   56.60","f":null},{"v":"   26.00","f":null},{"v":"   30.60","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 02:00","f":null},{"v":"   56.70","f":null},{"v":"   25.00","f":null},{"v":"   31.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 02:15","f":null},{"v":"   55.70","f":null},{"v":"   23.00","f":null},{"v":"   32.70","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 02:30","f":null},{"v":"   61.40","f":null},{"v":"   22.00","f":null},{"v":"   39.40","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 02:45","f":null},{"v":"   51.30","f":null},{"v":"   21.00","f":null},{"v":"   30.30","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 03:00","f":null},{"v":"   48.80","f":null},{"v":"   20.00","f":null},{"v":"   28.80","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 03:15","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 03:30","f":null},{"v":"null","f":null},{"v":"   18.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 03:45","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 04:00","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 04:15","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 04:30","f":null},{"v":"null","f":null},{"v":"   12.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 04:45","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 05:00","f":null},{"v":"null","f":null},{"v":"    8.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 05:15","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 05:30","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 05:45","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 06:00","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 06:15","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 06:30","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 06:45","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 07:00","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 07:15","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 07:30","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 07:45","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 08:00","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 08:15","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 08:30","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 08:45","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 09:00","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 09:15","f":null},{"v":"null","f":null},{"v":"    8.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 09:30","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 09:45","f":null},{"v":"null","f":null},{"v":"   12.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 10:00","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 10:15","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 10:30","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 10:45","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 11:00","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 11:15","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 11:30","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 11:45","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 12:00","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 12:15","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 12:30","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 12:45","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 13:00","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 13:15","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 13:30","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 13:45","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 14:00","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 14:15","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 14:30","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 14:45","f":null},{"v":"null","f":null},{"v":"   18.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 15:00","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 15:15","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 15:30","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 15:45","f":null},{"v":"null","f":null},{"v":"   12.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 16:00","f":null},{"v":"null","f":null},{"v":"   11.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 16:15","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 16:30","f":null},{"v":"null","f":null},{"v":"    8.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 16:45","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 17:00","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 17:15","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 17:30","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 17:45","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 18:00","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 18:15","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 18:30","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 18:45","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 19:00","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 19:15","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 19:30","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 19:45","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 20:00","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 20:15","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 20:30","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 20:45","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 21:00","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 21:15","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 21:30","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 21:45","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 22:00","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 22:15","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 22:30","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 22:45","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 23:00","f":null},{"v":"null","f":null},{"v":"   29.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 23:15","f":null},{"v":"null","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 23:30","f":null},{"v":"null","f":null},{"v":"   31.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"07/11 23:45","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 00:00","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 00:15","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 00:30","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 00:45","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 01:00","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 01:15","f":null},{"v":"null","f":null},{"v":"   31.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 01:30","f":null},{"v":"null","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 01:45","f":null},{"v":"null","f":null},{"v":"   29.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 02:00","f":null},{"v":"null","f":null},{"v":"   28.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 02:15","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 02:30","f":null},{"v":"null","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 02:45","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 03:00","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 03:15","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 03:30","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 03:45","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 04:00","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 04:15","f":null},{"v":"null","f":null},{"v":"   18.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 04:30","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 04:45","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 05:00","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 05:15","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 05:30","f":null},{"v":"null","f":null},{"v":"   11.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 05:45","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 06:00","f":null},{"v":"null","f":null},{"v":"    8.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 06:15","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 06:30","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 06:45","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 07:00","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 07:15","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 07:30","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 07:45","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 08:00","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 08:15","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 08:30","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 08:45","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 09:00","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 09:15","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 09:30","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 09:45","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 10:00","f":null},{"v":"null","f":null},{"v":"   11.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 10:15","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 10:30","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 10:45","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 11:00","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 11:15","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 11:30","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 11:45","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 12:00","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 12:15","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 12:30","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 12:45","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 13:00","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 13:15","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 13:30","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 13:45","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 14:00","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 14:15","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 14:30","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 14:45","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 15:00","f":null},{"v":"null","f":null},{"v":"   18.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 15:15","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 15:30","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 15:45","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 16:00","f":null},{"v":"null","f":null},{"v":"   12.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 16:15","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 16:30","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 16:45","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 17:00","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 17:15","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 17:30","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 17:45","f":null},{"v":"null","f":null},{"v":"    1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 18:00","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 18:15","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 18:30","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 18:45","f":null},{"v":"null","f":null},{"v":"   -5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 19:00","f":null},{"v":"null","f":null},{"v":"   -6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 19:15","f":null},{"v":"null","f":null},{"v":"   -6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 19:30","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 19:45","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 20:00","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 20:15","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 20:30","f":null},{"v":"null","f":null},{"v":"   -6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 20:45","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 21:00","f":null},{"v":"null","f":null},{"v":"   -2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 21:15","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 21:30","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 21:45","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 22:00","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 22:15","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 22:30","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 22:45","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 23:00","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 23:15","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 23:30","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"08/11 23:45","f":null},{"v":"null","f":null},{"v":"   29.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 00:00","f":null},{"v":"null","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 00:15","f":null},{"v":"null","f":null},{"v":"   31.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 00:30","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 00:45","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 01:00","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 01:15","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 01:30","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 01:45","f":null},{"v":"null","f":null},{"v":"   32.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 02:00","f":null},{"v":"null","f":null},{"v":"   31.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 02:15","f":null},{"v":"null","f":null},{"v":"   30.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 02:30","f":null},{"v":"null","f":null},{"v":"   29.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 02:45","f":null},{"v":"null","f":null},{"v":"   28.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 03:00","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 03:15","f":null},{"v":"null","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 03:30","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 03:45","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 04:00","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 04:15","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 04:30","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 04:45","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 05:00","f":null},{"v":"null","f":null},{"v":"   18.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 05:15","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 05:30","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 05:45","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 06:00","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 06:15","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 06:30","f":null},{"v":"null","f":null},{"v":"   11.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 06:45","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 07:00","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 07:15","f":null},{"v":"null","f":null},{"v":"    8.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 07:30","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 07:45","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 08:00","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 08:15","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 08:30","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 08:45","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 09:00","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 09:15","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 09:30","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 09:45","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 10:00","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 10:15","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 10:30","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 10:45","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 11:00","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 11:15","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 11:30","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 11:45","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 12:00","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 12:15","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 12:30","f":null},{"v":"null","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 12:45","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 13:00","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 13:15","f":null},{"v":"null","f":null},{"v":"   27.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 13:30","f":null},{"v":"null","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 13:45","f":null},{"v":"null","f":null},{"v":"   26.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 14:00","f":null},{"v":"null","f":null},{"v":"   25.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 14:15","f":null},{"v":"null","f":null},{"v":"   24.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 14:30","f":null},{"v":"null","f":null},{"v":"   23.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 14:45","f":null},{"v":"null","f":null},{"v":"   22.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 15:00","f":null},{"v":"null","f":null},{"v":"   20.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 15:15","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 15:30","f":null},{"v":"null","f":null},{"v":"   17.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 15:45","f":null},{"v":"null","f":null},{"v":"   15.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 16:00","f":null},{"v":"null","f":null},{"v":"   14.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 16:15","f":null},{"v":"null","f":null},{"v":"   12.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 16:30","f":null},{"v":"null","f":null},{"v":"   10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 16:45","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 17:00","f":null},{"v":"null","f":null},{"v":"    7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 17:15","f":null},{"v":"null","f":null},{"v":"    5.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 17:30","f":null},{"v":"null","f":null},{"v":"    4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 17:45","f":null},{"v":"null","f":null},{"v":"    2.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 18:00","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 18:15","f":null},{"v":"null","f":null},{"v":"   -1.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 18:30","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 18:45","f":null},{"v":"null","f":null},{"v":"   -4.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 19:00","f":null},{"v":"null","f":null},{"v":"   -6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 19:15","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 19:30","f":null},{"v":"null","f":null},{"v":"   -9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 19:45","f":null},{"v":"null","f":null},{"v":"   -9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 20:00","f":null},{"v":"null","f":null},{"v":"  -10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 20:15","f":null},{"v":"null","f":null},{"v":"  -10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 20:30","f":null},{"v":"null","f":null},{"v":"  -10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 20:45","f":null},{"v":"null","f":null},{"v":"  -10.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 21:00","f":null},{"v":"null","f":null},{"v":"   -9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 21:15","f":null},{"v":"null","f":null},{"v":"   -7.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 21:30","f":null},{"v":"null","f":null},{"v":"   -6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 21:45","f":null},{"v":"null","f":null},{"v":"   -3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 22:00","f":null},{"v":"null","f":null},{"v":"    0.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 22:15","f":null},{"v":"null","f":null},{"v":"    3.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 22:30","f":null},{"v":"null","f":null},{"v":"    6.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 22:45","f":null},{"v":"null","f":null},{"v":"    9.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 23:00","f":null},{"v":"null","f":null},{"v":"   13.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 23:15","f":null},{"v":"null","f":null},{"v":"   16.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 23:30","f":null},{"v":"null","f":null},{"v":"   19.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+,{"c":[{"v":"09/11 23:45","f":null},{"v":"null","f":null},{"v":"   21.00","f":null},{"v":"null","f":null},{"v":"null","f":null},{"v":"null","f":null}]}
+]}
