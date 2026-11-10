@@ -61,3 +61,7 @@ for k in [e["k"] for e in EST if e["id"]]:
         print(k, len(ts), "linhas,", round((ts[-1] - ts[0]) / 86400000, 1), "dias")
 with open(os.path.join(out_dir, "historico.json"), "w", encoding="utf-8") as f:
     json.dump(hist, f, separators=(",", ":"))
+# um arquivo por estação: o app baixa só a do ponto (8 KB) em vez de todas (92 KB)
+for k, v in hist.items():
+    with open(os.path.join(out_dir, f"historico_{k}.json"), "w", encoding="utf-8") as f:
+        json.dump(v, f, separators=(",", ":"))

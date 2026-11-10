@@ -571,6 +571,42 @@ def recorte(sec, r):
     return grid, {"run": sec["run"], "t": sec["t"], "v": v}
 
 
+# Arquivos que o app baixa ficam mais leves sem mudar o que ele mostra (medido em 10/11/2026: modelos 441 -> ~410 KB,
+# água/correntes 190 -> 126 KB comprimidos; notas iguais, água/correntes no máximo 1 ponto em 0,4% das horas): valores arredondados a passos menores que os da tela e sem o passado que o
+# app não usa (ele olha 7 dias para trás). O formato não muda, então versões antigas do app continuam funcionando.
+PASSO_MODELOS = {"c": 5, "h": 5}   # nuvem e umidade de 5 em 5%. O vento fica exato: arredondar até 0,2 km/h mudava
+                                   # notas em até 9 pontos (a nota tem limites bruscos de vento); validado em 10/11/2026
+PASSADO_S = 7.5 * 86400
+
+
+def enxuga_modelos(out):
+    corte = NOW.timestamp() - PASSADO_S
+    for k in ("gfs", "ecmwf", "ondas"):
+        sec = out.get(k)
+        if not sec or not sec.get("t"):
+            continue
+        idx = [i for i, t in enumerate(sec["t"]) if t >= corte]
+        sec["t"] = [sec["t"][i] for i in idx]
+        for var, arr in sec["v"].items():
+            arr = [arr[i] for i in idx]
+            q = PASSO_MODELOS.get(var) if k != "ondas" else None
+            if q:
+                arr = [None if row is None else [None if x is None else int(round(x / q)) * q for x in row] for row in arr]
+            sec["v"][var] = arr
+    return out
+
+
+def enxuga_mar(mar):
+    """Direção da corrente de 5 em 5 graus (a tela mostra 8 direções) e velocidade de 0,02 em 0,02 km/h."""
+    q = {"cd": 5, "cv": 0.02}
+    for var, passo in q.items():
+        if var in mar:
+            mar[var] = [None if p is None else [None if x is None else round(round(x / passo) * passo, 2) for x in p] for p in mar[var]]
+    if "cd" in mar:
+        mar["cd"] = [None if p is None else [None if x is None else (0 if x >= 360 else int(x)) for x in p] for p in mar["cd"]]
+    return mar
+
+
 def load(name):
     try:
         with open(os.path.join(D, name)) as f:
@@ -612,11 +648,11 @@ def main():
             if k in res:
                 out["grid"], out[k] = recorte(res[k], r)
         with open(os.path.join(D, f"modelos_{nome}.json"), "w") as f:
-            json.dump(out, f, separators=(",", ":"))
+            json.dump(enxuga_modelos(out), f, separators=(",", ":"))
         mar = mar_run(load(f"mar_{nome}.json"), r["mar"])
         if mar:
             with open(os.path.join(D, f"mar_{nome}.json"), "w") as f:
-                json.dump(mar, f, separators=(",", ":"))
+                json.dump(enxuga_mar(json.loads(json.dumps(mar))), f, separators=(",", ":"))
         log("Região", nome, "ok", "(água/correntes de", time.strftime("%d/%m %H:%M", time.gmtime(mar["at"])) + ")" if mar else "(sem água/correntes)")
     # nomes antigos (versões do app ainda em cache): SC
     import shutil
