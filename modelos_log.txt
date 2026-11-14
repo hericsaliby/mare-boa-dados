@@ -1,0 +1,9 @@
+2026-11-14T10:00:00+00:00
+GFS: rodada 2026111406 137 horários + 78 do passado
+ECMWF 75 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261114/00z/ifs/0p25/oper/20261114000000-75h-oper-fc.grib2
+ECMWF: rodada 2026111400 52 horários + 22 do passado
+Ondas: rodada 2026111406 57 horários + 62 do passado
+Vento amplo: 58 horários, 945 pontos
+Região sc ok (água/correntes de 14/11 01:37)
+Região pr ok (água/correntes de 13/11 20:32)
+Região sp ok (água/correntes de 13/11 20:32)
