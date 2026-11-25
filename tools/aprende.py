@@ -187,12 +187,22 @@ def hora(x):
 
 
 V = lambda x, k: (x.get("v") or {}).get(k)
+
+
+def rf_de(x):
+    """Tamanho da maré pela fase da lua: 1 nova/cheia, 0 quartos. Refeito pela data porque o app gravava errado até 25/11/2026
+    (cos de 4π·fase dava 1 também nas luas de quarto). Fase pela lunação média (erro de algumas horas, basta para agrupar)."""
+    t = x.get("t")
+    if not isinstance(t, (int, float)):
+        return V(x, "rf")
+    dias = (t / 1000 if t > 1e11 else t) / 86400 + 2440587.5 - 2451550.1
+    return abs(math.cos(2 * math.pi * ((dias / 29.530588853) % 1)))
 cond = [
     ("Maré", [grupo("enchendo", lambda x: V(x, "enchendo") == 1), grupo("vazando", lambda x: V(x, "enchendo") == 0)]),
     ("Movimento da maré", [grupo("correndo bem", lambda x: isinstance(V(x, "mov"), (int, float)) and V(x, "mov") >= .5),
                            grupo("perto da virada", lambda x: isinstance(V(x, "mov"), (int, float)) and V(x, "mov") < .5)]),
-    ("Tamanho da maré", [grupo("grande (lua cheia/nova)", lambda x: isinstance(V(x, "rf"), (int, float)) and V(x, "rf") >= .6),
-                         grupo("pequena/média", lambda x: isinstance(V(x, "rf"), (int, float)) and V(x, "rf") < .6)]),
+    ("Tamanho da maré", [grupo("grande (lua cheia/nova)", lambda x: isinstance(rf_de(x), (int, float)) and rf_de(x) >= .6),
+                         grupo("pequena/média", lambda x: isinstance(rf_de(x), (int, float)) and rf_de(x) < .6)]),
     ("Período", [grupo("madrugada (0–6h)", lambda x: hora(x) is not None and hora(x) < 6), grupo("manhã (6–12h)", lambda x: hora(x) is not None and 6 <= hora(x) < 12),
                  grupo("tarde (12–18h)", lambda x: hora(x) is not None and 12 <= hora(x) < 18), grupo("noite (18–24h)", lambda x: hora(x) is not None and hora(x) >= 18)]),
     ("Frente fria", [grupo("véspera de frente", lambda x: isinstance(V(x, "pre"), (int, float)) and V(x, "pre") > .3),
