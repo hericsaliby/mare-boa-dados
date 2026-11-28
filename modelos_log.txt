@@ -1,0 +1,58 @@
+2026-11-28T08:00:00+00:00
+GFS: rodada 2026112800 137 horários + 77 do passado
+ECMWF 12 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-12h-oper-fc.index
+ECMWF 15 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-15h-oper-fc.index
+ECMWF 9 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-9h-oper-fc.index
+ECMWF 3 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-3h-oper-fc.index
+ECMWF 21 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-21h-oper-fc.grib2
+ECMWF 18 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-18h-oper-fc.index
+ECMWF 0 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-0h-oper-fc.index
+ECMWF 6 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-6h-oper-fc.index
+ECMWF 27 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-27h-oper-fc.index
+ECMWF 24 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-24h-oper-fc.grib2
+ECMWF 30 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-30h-oper-fc.index
+ECMWF 39 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-39h-oper-fc.index
+ECMWF 33 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-33h-oper-fc.index
+ECMWF 45 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-45h-oper-fc.index
+ECMWF 36 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-36h-oper-fc.index
+ECMWF 42 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-42h-oper-fc.grib2
+ECMWF 48 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-48h-oper-fc.index
+ECMWF 54 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-54h-oper-fc.index
+ECMWF 51 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-51h-oper-fc.grib2
+ECMWF 66 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-66h-oper-fc.index
+ECMWF 60 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-60h-oper-fc.grib2
+ECMWF 63 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-63h-oper-fc.index
+ECMWF 57 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-57h-oper-fc.grib2
+ECMWF 69 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-69h-oper-fc.grib2
+ECMWF 72 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-72h-oper-fc.grib2
+ECMWF 78 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-78h-oper-fc.grib2
+ECMWF 75 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-75h-oper-fc.index
+ECMWF 84 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-84h-oper-fc.index
+ECMWF 87 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-87h-oper-fc.index
+ECMWF 81 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-81h-oper-fc.grib2
+ECMWF 90 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-90h-oper-fc.grib2
+ECMWF 93 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-93h-oper-fc.index
+ECMWF 99 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-99h-oper-fc.grib2
+ECMWF 108 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-108h-oper-fc.index
+ECMWF 96 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-96h-oper-fc.grib2
+ECMWF 105 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-105h-oper-fc.index
+ECMWF 111 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-111h-oper-fc.grib2
+ECMWF 102 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-102h-oper-fc.grib2
+ECMWF 114 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-114h-oper-fc.grib2
+ECMWF 117 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-117h-oper-fc.grib2
+ECMWF 120 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-120h-oper-fc.index
+ECMWF 126 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-126h-oper-fc.grib2
+ECMWF 129 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-129h-oper-fc.grib2
+ECMWF 138 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-138h-oper-fc.index
+ECMWF 132 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-132h-oper-fc.grib2
+ECMWF 123 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-123h-oper-fc.grib2
+ECMWF 135 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-135h-oper-fc.grib2
+ECMWF 144 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-144h-oper-fc.grib2
+ECMWF 150 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-150h-oper-fc.index
+ECMWF 162 erro falhou: https://ecmwf-forecasts.s3.eu-central-1.amazonaws.com/20261128/00z/ifs/0p25/oper/20261128000000-162h-oper-fc.grib2
+ECMWF: rodada 2026112800 3 horários + 36 do passado
+Ondas: rodada 2026112800 57 horários + 61 do passado
+Vento amplo: 58 horários, 945 pontos
+Região sc ok (água/correntes de 27/11 23:45)
+Região pr ok (água/correntes de 27/11 23:45)
+Região sp ok (água/correntes de 27/11 23:45)
